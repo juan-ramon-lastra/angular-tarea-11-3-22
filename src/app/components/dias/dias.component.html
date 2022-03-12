@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>Listado de dias</h2>
+  <div class="row">
+    <div class="col">
+      <ul>
+        <li *ngFor="let dia of dias">{{dia}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <button (click)="borrarDia()">Borrar dia</button>
+    </div>
+  </div>
+</div>

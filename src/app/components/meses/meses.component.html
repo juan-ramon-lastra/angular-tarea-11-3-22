@@ -1,0 +1,15 @@
+
+<div class="container">
+  <h2>Listado de meses</h2>
+  <div class="row">
+    <div class="col">
+      <ul>
+        <li *ngFor="let mes of meses">{{mes}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <button (click)="borrarMes()">Borrar mes</button>
+    </div>
+  </div>
+</div>
+

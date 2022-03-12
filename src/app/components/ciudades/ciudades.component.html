@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>Listado de ciudades</h2>
+  <div class="row">
+    <div class="col">
+      <button id="boton" (click)="mostrarCiudades()">Mostrar ciudades</button>
+    </div>
+  </div>
+</div>
+
+<div class="container" *ngIf="visible">
+  <div class="row">
+    <div class="col">
+      <ul>
+        <li *ngFor="let ciudad of ciudades">{{ciudad}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <button (click)="borrarCiudad()">Borrar ciudad</button>
+    </div>
+    <div class="col">
+      <ul>
+        <li *ngFor="let ciudad of ciudadesBorradas">{{ciudad}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+

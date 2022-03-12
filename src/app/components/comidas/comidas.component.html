@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>Listado de comidas</h2>
+  <div class="row">
+    <div class="col">
+      <ul>
+        <li *ngFor="let comida of comidas">{{comida}}</li>
+      </ul>
+    </div>
+    <div class="col">
+      <button (click)="borrarComidas()">Borrar todas las comidas</button>
+    </div>
+  </div>
+</div>
